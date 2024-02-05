@@ -11,7 +11,7 @@ const EmailForm = () => {
       const response = await axios.post('http://localhost:3001/send-bulk-email', {
         to,
         subject,
-       body,
+        body,
       });
 if(response.data){
       alert("Message sent successfully");
