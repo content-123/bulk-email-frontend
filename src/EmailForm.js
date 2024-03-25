@@ -8,7 +8,7 @@ const EmailForm = () => {
 
   const handleSendEmail = async () => {
     try {
-      const response = await axios.post('http://localhost:3001/send-bulk-email', {
+      const response = await axios.post('https://bulkemail-kt07.onrender.com/send-bulk-email', {
         to,
         subject,
         body,
