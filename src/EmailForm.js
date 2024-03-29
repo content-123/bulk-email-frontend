@@ -6,6 +6,8 @@ const EmailForm = () => {
   const [subject, setSubject] = useState('');
   const [body, setBody] = useState('');
 
+  
+
   const handleSendEmail = async () => {
     try {
       const response = await axios.post('https://bulkemail-kt07.onrender.com/send-bulk-email', {
